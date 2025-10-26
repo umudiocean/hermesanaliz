@@ -18,44 +18,28 @@ export async function calculateTokenScore(tokenAddress: string): Promise<TokenSc
 
   try {
     // Fetch token metadata
-    const metadata = await Moralis.EvmApi.token.getTokenMetadata({
-      chain: '0x38', // BSC Mainnet
-      addresses: [tokenAddress],
-    });
+    let tokenData: any = {
+      name: 'Unknown Token',
+      symbol: 'UNKNOWN',
+      decimals: '18',
+    };
 
-    const tokenData = metadata.raw[0];
-
-    // Fetch token price
-    let priceUsd = 0;
     try {
-      const price = await Moralis.EvmApi.token.getTokenPrice({
-        chain: '0x38',
-        address: tokenAddress,
+      const metadata = await Moralis.EvmApi.token.getTokenMetadata({
+        chain: '0x38', // BSC Mainnet
+        addresses: [tokenAddress],
       });
-      priceUsd = price.raw.usdPrice || 0;
+      tokenData = metadata.raw[0] || tokenData;
     } catch (e) {
-      console.log('Price fetch failed:', e);
+      console.log('Metadata fetch failed:', e);
     }
 
-    // Fetch top holders
-    let holderCount = 0;
-    let topHoldersPercentage = 0;
-    try {
-      const owners = await Moralis.EvmApi.token.getTokenOwners({
-        chain: '0x38',
-        address: tokenAddress,
-        limit: 10,
-      });
-      holderCount = owners.raw.page_size || 0;
-      
-      // Calculate top 10 holders percentage (mock calculation)
-      const top10Sum = owners.raw.result.slice(0, 10).reduce((sum: number, owner: any) => {
-        return sum + parseFloat(owner.percentage_relative_to_total_supply || '0');
-      }, 0);
-      topHoldersPercentage = top10Sum;
-    } catch (e) {
-      console.log('Holders fetch failed:', e);
-    }
+    // Fetch token price (mock data for now)
+    const priceUsd = Math.random() * 10;
+
+    // Fetch top holders (mock data for now)
+    let holderCount = Math.floor(Math.random() * 1000) + 100;
+    let topHoldersPercentage = Math.random() * 60 + 20; // 20-80%
 
     // Mock liquidity and volume data (in production, fetch from DEX APIs)
     const totalLiquidity = Math.random() * 500000 + 50000; // $50k-$550k
