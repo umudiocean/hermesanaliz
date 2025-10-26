@@ -3,7 +3,10 @@ import { NextIntlClientProvider } from 'next-intl';
 import { locales } from '@/i18n';
 import { Providers } from '@/components/providers/Providers';
 
-export const dynamic = 'force-dynamic';
+type Props = {
+  children: React.ReactNode;
+  params: { locale: string };
+};
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -12,12 +15,8 @@ export function generateStaticParams() {
 export default async function LocaleLayout({
   children,
   params,
-}: {
-  children: React.ReactNode;
-  params: { locale: string };
-}) {
-  // Await params in async component
-  const { locale } = await Promise.resolve(params);
+}: Props) {
+  const { locale } = params;
   
   if (!locales.includes(locale as any)) {
     notFound();
