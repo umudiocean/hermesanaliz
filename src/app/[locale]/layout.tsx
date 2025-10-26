@@ -1,17 +1,7 @@
-import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { NextIntlClientProvider } from 'next-intl';
 import { locales } from '@/i18n';
 import { Providers } from '@/components/providers/Providers';
-import { Inter } from 'next/font/google';
-import '../globals.css';
-
-const inter = Inter({ subsets: ['latin'] });
-
-export const metadata: Metadata = {
-  title: 'Hermes AI Analyzer - Token Analysis Platform',
-  description: 'AI-powered token analysis on BSC with advanced scoring system',
-};
 
 export const dynamic = 'force-dynamic';
 export const dynamicParams = true;
@@ -35,13 +25,9 @@ export default async function LocaleLayout({
   }
 
   return (
-    <html lang={locale} className="dark">
-      <body className={inter.className}>
-        <NextIntlClientProvider locale={locale} messages={messages}>
-          <Providers>{children}</Providers>
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <NextIntlClientProvider locale={locale} messages={messages}>
+      <Providers locale={locale}>{children}</Providers>
+    </NextIntlClientProvider>
   );
 }
 

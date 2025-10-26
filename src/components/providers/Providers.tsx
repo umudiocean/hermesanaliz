@@ -8,8 +8,13 @@ import { QueryClientProvider, QueryClient } from '@tanstack/react-query';
 import { Toaster } from 'react-hot-toast';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
+import { useState, useEffect } from 'react';
+import { Inter } from 'next/font/google';
 
-const config = createConfig({
+const inter = Inter({ subsets: ['latin'] });
+
+// Create wagmi config outside component to prevent recreation
+const wagmiConfig = createConfig({
   chains: [bsc],
   transports: {
     [bsc.id]: http(),
@@ -17,11 +22,31 @@ const config = createConfig({
   ssr: true,
 });
 
-const queryClient = new QueryClient();
+export function Providers({ 
+  children,
+  locale 
+}: { 
+  children: React.ReactNode;
+  locale: string;
+}) {
+  // Create QueryClient instance once per component mount (SSR-safe)
+  const [queryClient] = useState(() => new QueryClient({
+    defaultOptions: {
+      queries: {
+        refetchOnWindowFocus: false,
+        staleTime: 60 * 1000, // 1 minute
+      },
+    },
+  }));
 
-export function Providers({ children }: { children: React.ReactNode }) {
+  // Set document language on client-side
+  useEffect(() => {
+    document.documentElement.lang = locale;
+    document.body.className = inter.className;
+  }, [locale]);
+
   return (
-    <WagmiProvider config={config}>
+    <WagmiProvider config={wagmiConfig}>
       <QueryClientProvider client={queryClient}>
         <RainbowKitProvider
           theme={darkTheme({
