@@ -4,15 +4,21 @@ import { locales } from '@/i18n';
 import { Providers } from '@/components/providers/Providers';
 
 export const dynamic = 'force-dynamic';
-export const dynamicParams = true;
+
+export function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
+}
 
 export default async function LocaleLayout({
   children,
-  params: { locale },
+  params,
 }: {
   children: React.ReactNode;
   params: { locale: string };
 }) {
+  // Await params in async component
+  const { locale } = await Promise.resolve(params);
+  
   if (!locales.includes(locale as any)) {
     notFound();
   }

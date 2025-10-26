@@ -3,7 +3,7 @@ import { AnalyzerSection } from '@/components/sections/AnalyzerSection';
 
 export const dynamic = 'force-dynamic';
 
-export default function HomePage() {
+export default async function HomePage() {
   return (
     <main className="min-h-screen">
       <HeroSection />
