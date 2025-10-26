@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import { NextIntlClientProvider } from 'next-intl';
+import { setRequestLocale } from 'next-intl/server';
 import { locales } from '@/i18n';
 import { Providers } from '@/components/providers/Providers';
 
@@ -21,6 +22,9 @@ export default async function LocaleLayout({
   if (!locales.includes(locale as any)) {
     notFound();
   }
+
+  // Enable static rendering
+  setRequestLocale(locale);
 
   let messages;
   try {
