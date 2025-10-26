@@ -1,26 +1,8 @@
 export const CONTRACTS = {
-  HERMES_TOKEN: process.env.NEXT_PUBLIC_HERMES_TOKEN_ADDRESS as `0x${string}`,
-  ANALYZER: process.env.NEXT_PUBLIC_ANALYZER_CONTRACT_ADDRESS as `0x${string}`,
-  PAYMENT_WALLET: process.env.NEXT_PUBLIC_PAYMENT_WALLET as `0x${string}`,
+  HERMES_TOKEN: (process.env.NEXT_PUBLIC_HERMES_TOKEN_ADDRESS || '0x9495ab3549338bf14ad2f86cbcf79c7b574bba37') as `0x${string}`,
+  ANALYZER: (process.env.NEXT_PUBLIC_ANALYZER_CONTRACT_ADDRESS || '0x1653DED409F9FB61B38b18280483a0eAD562A57D') as `0x${string}`,
+  PAYMENT_WALLET: (process.env.NEXT_PUBLIC_PAYMENT_WALLET || '0xd88026A648C95780e3056ed98eD60E5105cc4863') as `0x${string}`,
 };
 
-export const CHAIN_ID = parseInt(process.env.NEXT_PUBLIC_CHAIN_ID || '56');
-
-export const BSC_MAINNET = {
-  id: 56,
-  name: 'BSC Mainnet',
-  network: 'bsc',
-  nativeCurrency: {
-    decimals: 18,
-    name: 'BNB',
-    symbol: 'BNB',
-  },
-  rpcUrls: {
-    default: { http: ['https://bsc-dataseed1.binance.org'] },
-    public: { http: ['https://bsc-dataseed1.binance.org'] },
-  },
-  blockExplorers: {
-    default: { name: 'BscScan', url: 'https://bscscan.com' },
-  },
-} as const;
+export const CHAIN_ID = 56;
 

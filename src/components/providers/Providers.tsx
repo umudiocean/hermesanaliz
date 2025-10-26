@@ -1,18 +1,19 @@
 'use client';
 
 import '@rainbow-me/rainbowkit/styles.css';
-import { RainbowKitProvider, getDefaultConfig, darkTheme } from '@rainbow-me/rainbowkit';
-import { WagmiProvider } from 'wagmi';
+import { RainbowKitProvider, darkTheme } from '@rainbow-me/rainbowkit';
+import { WagmiProvider, http, createConfig } from 'wagmi';
+import { bsc } from 'wagmi/chains';
 import { QueryClientProvider, QueryClient } from '@tanstack/react-query';
 import { Toaster } from 'react-hot-toast';
-import { BSC_MAINNET } from '@/config/contracts';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 
-const config = getDefaultConfig({
-  appName: 'Hermes AI Analyzer',
-  projectId: process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID || '',
-  chains: [BSC_MAINNET as any],
+const config = createConfig({
+  chains: [bsc],
+  transports: {
+    [bsc.id]: http(),
+  },
   ssr: true,
 });
 
