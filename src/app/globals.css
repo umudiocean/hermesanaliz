@@ -4,7 +4,6 @@
 
 :root {
   --background: #0a0b0d;
-  --foreground: #ffffff;
 }
 
 @layer base {
@@ -12,7 +11,7 @@
     @apply border-gray-800;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-white;
     font-feature-settings: 'rlig' 1, 'calt' 1;
   }
 }
