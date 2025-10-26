@@ -1,0 +1,12 @@
+import { HeroSection } from '@/components/sections/HeroSection';
+import { AnalyzerSection } from '@/components/sections/AnalyzerSection';
+
+export default function HomePage() {
+  return (
+    <main className="min-h-screen">
+      <HeroSection />
+      <AnalyzerSection />
+    </main>
+  );
+}
+
