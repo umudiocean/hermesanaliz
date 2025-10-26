@@ -18,32 +18,57 @@ export async function calculateTokenScore(tokenAddress: string): Promise<TokenSc
 
   try {
     // Fetch token metadata
-    let tokenData: any = {
-      name: 'Unknown Token',
-      symbol: 'UNKNOWN',
-      decimals: '18',
-    };
+    const metadata = await Moralis.EvmApi.token.getTokenMetadata({
+      chain: '0x38', // BSC Mainnet
+      addresses: [tokenAddress],
+    });
 
+    const tokenData = metadata.raw[0];
+
+    // Fetch token price
+    let priceUsd = 0;
+    let nativePrice = 0;
     try {
-      const metadata = await Moralis.EvmApi.token.getTokenMetadata({
-        chain: '0x38', // BSC Mainnet
-        addresses: [tokenAddress],
+      const price = await Moralis.EvmApi.token.getTokenPrice({
+        chain: '0x38',
+        address: tokenAddress,
       });
-      tokenData = metadata.raw[0] || tokenData;
+      priceUsd = price.raw.usdPrice || 0;
+      nativePrice = parseFloat(price.raw.nativePrice?.value || '0');
     } catch (e) {
-      console.log('Metadata fetch failed:', e);
+      console.log('Price fetch failed:', e);
     }
 
-    // Fetch token price (mock data for now)
-    const priceUsd = Math.random() * 10;
+    // Fetch wallet token balances to get holder info
+    let holderCount = 0;
+    let topHoldersPercentage = 0;
+    try {
+      // Get token transfers to estimate holders
+      const transfers = await Moralis.EvmApi.token.getTokenTransfers({
+        chain: '0x38',
+        address: tokenAddress,
+        limit: 100,
+      });
+      
+      // Estimate unique holders from transfers
+      const uniqueAddresses = new Set();
+      transfers.raw.result?.forEach((tx: any) => {
+        uniqueAddresses.add(tx.from_address);
+        uniqueAddresses.add(tx.to_address);
+      });
+      holderCount = uniqueAddresses.size;
+      
+      // Estimate whale concentration (simplified)
+      topHoldersPercentage = holderCount < 50 ? 60 : holderCount < 200 ? 40 : 25;
+    } catch (e) {
+      console.log('Holder data fetch failed:', e);
+      holderCount = 50; // Fallback
+      topHoldersPercentage = 50;
+    }
 
-    // Fetch top holders (mock data for now)
-    let holderCount = Math.floor(Math.random() * 1000) + 100;
-    let topHoldersPercentage = Math.random() * 60 + 20; // 20-80%
-
-    // Mock liquidity and volume data (in production, fetch from DEX APIs)
-    const totalLiquidity = Math.random() * 500000 + 50000; // $50k-$550k
-    const volume24h = totalLiquidity * (Math.random() * 0.5 + 0.2); // 20-70% of liquidity
+    // Estimate liquidity and volume from price and transfers
+    const totalLiquidity = priceUsd > 0 ? priceUsd * holderCount * 1000 : 50000;
+    const volume24h = totalLiquidity * 0.3; // Estimate 30% daily volume
 
     // Calculate scores for each category
     const liquidityScore = calculateLiquidityScore(totalLiquidity, volume24h);
