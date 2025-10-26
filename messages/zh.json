@@ -1,0 +1,128 @@
+{
+  "common": {
+    "appName": "Hermes AI 分析器",
+    "connect": "连接钱包",
+    "disconnect": "断开连接",
+    "loading": "加载中...",
+    "error": "错误",
+    "success": "成功",
+    "comingSoon": "即将推出"
+  },
+  "nav": {
+    "home": "首页",
+    "analyzer": "分析器",
+    "admin": "管理员",
+    "language": "语言"
+  },
+  "hero": {
+    "title": "AI驱动的代币分析",
+    "subtitle": "使用先进的AI评分系统分析BSC代币",
+    "description": "获取由区块链数据和人工智能支持的全面风险评估、流动性分析和持有者分布洞察。",
+    "cta": "开始分析",
+    "features": {
+      "ai": "AI评分",
+      "realtime": "实时数据",
+      "secure": "安全透明"
+    }
+  },
+  "wallet": {
+    "connect": "连接您的钱包开始",
+    "wrongNetwork": "错误的网络",
+    "switchToBSC": "请切换到BSC主网",
+    "balance": "余额",
+    "address": "地址",
+    "hermesBalance": "HERMES余额",
+    "insufficientBalance": "HERMES余额不足",
+    "needMinimum": "您需要至少{amount}个HERMES代币才能使用此平台"
+  },
+  "analyzer": {
+    "title": "代币分析器",
+    "inputLabel": "代币合约地址",
+    "inputPlaceholder": "输入BSC代币地址(0x...)",
+    "analyze": "分析代币",
+    "analyzing": "分析中...",
+    "freeAnalyses": "今日免费分析",
+    "remaining": "剩余{count}次",
+    "paymentRequired": "需要付款",
+    "payAmount": "支付{amount} HERMES",
+    "approve": "批准",
+    "approving": "批准中...",
+    "approved": "已批准",
+    "invalidAddress": "无效的合约地址",
+    "enterAddress": "请输入代币地址"
+  },
+  "score": {
+    "overallScore": "总体评分",
+    "riskLevel": "风险等级",
+    "excellent": "优秀",
+    "good": "良好",
+    "risky": "有风险",
+    "highRisk": "高风险",
+    "categories": {
+      "liquidity": "流动性和交易量",
+      "holders": "持有者分析",
+      "security": "合约安全性",
+      "activity": "活跃度和年龄",
+      "performance": "价格表现",
+      "dex": "DEX存在"
+    },
+    "details": "评分详情",
+    "breakdown": "类别细分",
+    "totalLiquidity": "总流动性",
+    "tradingVolume": "24小时交易量",
+    "holderCount": "持有者数量",
+    "topHolders": "前10名持有者",
+    "tokenAge": "代币年龄",
+    "dailyTransfers": "每日转账"
+  },
+  "admin": {
+    "title": "管理面板",
+    "login": "管理员登录",
+    "password": "密码",
+    "loginButton": "登录",
+    "logout": "退出",
+    "unauthorized": "未授权访问",
+    "stats": {
+      "title": "平台统计",
+      "totalAnalyses": "总分析次数",
+      "totalRevenue": "总收入",
+      "activeUsers": "活跃用户",
+      "todayAnalyses": "今日分析"
+    },
+    "settings": {
+      "title": "合约设置",
+      "minimumBalance": "最低HERMES余额",
+      "analysisPrice": "分析价格(HERMES)",
+      "dailyLimit": "每日免费限额",
+      "paymentWallet": "付款钱包",
+      "update": "更新",
+      "updating": "更新中...",
+      "updated": "设置更新成功",
+      "pause": "暂停合约",
+      "unpause": "恢复合约",
+      "paused": "合约已暂停",
+      "active": "合约活跃"
+    }
+  },
+  "toast": {
+    "walletConnected": "钱包连接成功",
+    "walletDisconnected": "钱包已断开",
+    "analysisComplete": "分析完成",
+    "analysisFailed": "分析失败",
+    "paymentSuccess": "付款成功",
+    "paymentFailed": "付款失败",
+    "approvalSuccess": "批准成功",
+    "approvalFailed": "批准失败",
+    "copied": "已复制到剪贴板",
+    "error": "发生错误"
+  },
+  "footer": {
+    "rights": "版权所有",
+    "poweredBy": "技术支持",
+    "docs": "文档",
+    "support": "支持",
+    "terms": "服务条款",
+    "privacy": "隐私政策"
+  }
+}
+

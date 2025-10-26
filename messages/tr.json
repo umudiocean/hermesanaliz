@@ -1,0 +1,128 @@
+{
+  "common": {
+    "appName": "Hermes AI Analyzer",
+    "connect": "Cüzdan Bağla",
+    "disconnect": "Bağlantıyı Kes",
+    "loading": "Yükleniyor...",
+    "error": "Hata",
+    "success": "Başarılı",
+    "comingSoon": "Yakında"
+  },
+  "nav": {
+    "home": "Ana Sayfa",
+    "analyzer": "Analizör",
+    "admin": "Yönetici",
+    "language": "Dil"
+  },
+  "hero": {
+    "title": "AI Destekli Token Analizi",
+    "subtitle": "BSC tokenlerini gelişmiş AI puanlama sistemiyle analiz edin",
+    "description": "Blockchain verileri ve yapay zeka ile desteklenen kapsamlı risk değerlendirmesi, likidite analizi ve holder dağılım bilgileri edinin.",
+    "cta": "Analize Başla",
+    "features": {
+      "ai": "AI Puanlama",
+      "realtime": "Gerçek Zamanlı Veri",
+      "secure": "Güvenli & Şeffaf"
+    }
+  },
+  "wallet": {
+    "connect": "Başlamak için cüzdanınızı bağlayın",
+    "wrongNetwork": "Yanlış Ağ",
+    "switchToBSC": "Lütfen BSC Mainnet'e geçin",
+    "balance": "Bakiye",
+    "address": "Adres",
+    "hermesBalance": "HERMES Bakiyesi",
+    "insufficientBalance": "Yetersiz HERMES Bakiyesi",
+    "needMinimum": "Bu platformu kullanmak için en az {amount} HERMES token'a ihtiyacınız var"
+  },
+  "analyzer": {
+    "title": "Token Analizörü",
+    "inputLabel": "Token Kontrat Adresi",
+    "inputPlaceholder": "BSC token adresini girin (0x...)",
+    "analyze": "Token Analiz Et",
+    "analyzing": "Analiz Ediliyor...",
+    "freeAnalyses": "Bugün Ücretsiz Analiz",
+    "remaining": "{count} kaldı",
+    "paymentRequired": "Ödeme Gerekli",
+    "payAmount": "{amount} HERMES Öde",
+    "approve": "Onayla",
+    "approving": "Onaylanıyor...",
+    "approved": "Onaylandı",
+    "invalidAddress": "Geçersiz kontrat adresi",
+    "enterAddress": "Lütfen bir token adresi girin"
+  },
+  "score": {
+    "overallScore": "Genel Puan",
+    "riskLevel": "Risk Seviyesi",
+    "excellent": "Mükemmel",
+    "good": "İyi",
+    "risky": "Riskli",
+    "highRisk": "Yüksek Risk",
+    "categories": {
+      "liquidity": "Likidite & Hacim",
+      "holders": "Holder Analizi",
+      "security": "Kontrat Güvenliği",
+      "activity": "Aktivite & Yaş",
+      "performance": "Fiyat Performansı",
+      "dex": "DEX Varlığı"
+    },
+    "details": "Puan Detayları",
+    "breakdown": "Kategori Dağılımı",
+    "totalLiquidity": "Toplam Likidite",
+    "tradingVolume": "24s Hacim",
+    "holderCount": "Holder Sayısı",
+    "topHolders": "İlk 10 Holder",
+    "tokenAge": "Token Yaşı",
+    "dailyTransfers": "Günlük Transfer"
+  },
+  "admin": {
+    "title": "Yönetici Paneli",
+    "login": "Yönetici Girişi",
+    "password": "Şifre",
+    "loginButton": "Giriş Yap",
+    "logout": "Çıkış Yap",
+    "unauthorized": "Yetkisiz Erişim",
+    "stats": {
+      "title": "Platform İstatistikleri",
+      "totalAnalyses": "Toplam Analiz",
+      "totalRevenue": "Toplam Gelir",
+      "activeUsers": "Aktif Kullanıcı",
+      "todayAnalyses": "Bugünkü Analizler"
+    },
+    "settings": {
+      "title": "Kontrat Ayarları",
+      "minimumBalance": "Minimum HERMES Bakiyesi",
+      "analysisPrice": "Analiz Fiyatı (HERMES)",
+      "dailyLimit": "Günlük Ücretsiz Limit",
+      "paymentWallet": "Ödeme Cüzdanı",
+      "update": "Güncelle",
+      "updating": "Güncelleniyor...",
+      "updated": "Ayarlar başarıyla güncellendi",
+      "pause": "Kontratı Durdur",
+      "unpause": "Kontratı Başlat",
+      "paused": "Kontrat durduruldu",
+      "active": "Kontrat aktif"
+    }
+  },
+  "toast": {
+    "walletConnected": "Cüzdan başarıyla bağlandı",
+    "walletDisconnected": "Cüzdan bağlantısı kesildi",
+    "analysisComplete": "Analiz başarıyla tamamlandı",
+    "analysisFailed": "Analiz başarısız oldu",
+    "paymentSuccess": "Ödeme başarılı",
+    "paymentFailed": "Ödeme başarısız",
+    "approvalSuccess": "Onay başarılı",
+    "approvalFailed": "Onay başarısız",
+    "copied": "Panoya kopyalandı",
+    "error": "Bir hata oluştu"
+  },
+  "footer": {
+    "rights": "Tüm hakları saklıdır",
+    "poweredBy": "Destekleyen",
+    "docs": "Dokümantasyon",
+    "support": "Destek",
+    "terms": "Kullanım Şartları",
+    "privacy": "Gizlilik Politikası"
+  }
+}
+

@@ -1,0 +1,128 @@
+{
+  "common": {
+    "appName": "Hermes AI アナライザー",
+    "connect": "ウォレット接続",
+    "disconnect": "切断",
+    "loading": "読み込み中...",
+    "error": "エラー",
+    "success": "成功",
+    "comingSoon": "近日公開"
+  },
+  "nav": {
+    "home": "ホーム",
+    "analyzer": "アナライザー",
+    "admin": "管理者",
+    "language": "言語"
+  },
+  "hero": {
+    "title": "AI駆動トークン分析",
+    "subtitle": "高度なAIスコアリングシステムでBSCトークンを分析",
+    "description": "ブロックチェーンデータと人工知能を活用した包括的なリスク評価、流動性分析、保有者分布の洞察を入手できます。",
+    "cta": "分析を開始",
+    "features": {
+      "ai": "AIスコアリング",
+      "realtime": "リアルタイムデータ",
+      "secure": "安全で透明"
+    }
+  },
+  "wallet": {
+    "connect": "開始するにはウォレットを接続してください",
+    "wrongNetwork": "ネットワークが違います",
+    "switchToBSC": "BSC Mainnetに切り替えてください",
+    "balance": "残高",
+    "address": "アドレス",
+    "hermesBalance": "HERMES残高",
+    "insufficientBalance": "HERMES残高不足",
+    "needMinimum": "このプラットフォームを使用するには、最低{amount}のHERMESトークンが必要です"
+  },
+  "analyzer": {
+    "title": "トークンアナライザー",
+    "inputLabel": "トークンコントラクトアドレス",
+    "inputPlaceholder": "BSCトークンアドレスを入力 (0x...)",
+    "analyze": "トークン分析",
+    "analyzing": "分析中...",
+    "freeAnalyses": "本日の無料分析",
+    "remaining": "残り{count}回",
+    "paymentRequired": "支払いが必要",
+    "payAmount": "{amount} HERMESを支払う",
+    "approve": "承認",
+    "approving": "承認中...",
+    "approved": "承認済み",
+    "invalidAddress": "無効なコントラクトアドレス",
+    "enterAddress": "トークンアドレスを入力してください"
+  },
+  "score": {
+    "overallScore": "総合スコア",
+    "riskLevel": "リスクレベル",
+    "excellent": "優秀",
+    "good": "良好",
+    "risky": "リスクあり",
+    "highRisk": "高リスク",
+    "categories": {
+      "liquidity": "流動性と取引高",
+      "holders": "保有者分析",
+      "security": "コントラクトセキュリティ",
+      "activity": "活動と年齢",
+      "performance": "価格パフォーマンス",
+      "dex": "DEXプレゼンス"
+    },
+    "details": "スコア詳細",
+    "breakdown": "カテゴリー内訳",
+    "totalLiquidity": "総流動性",
+    "tradingVolume": "24時間取引高",
+    "holderCount": "保有者数",
+    "topHolders": "トップ10保有者",
+    "tokenAge": "トークン年齢",
+    "dailyTransfers": "1日の転送"
+  },
+  "admin": {
+    "title": "管理パネル",
+    "login": "管理者ログイン",
+    "password": "パスワード",
+    "loginButton": "ログイン",
+    "logout": "ログアウト",
+    "unauthorized": "不正なアクセス",
+    "stats": {
+      "title": "プラットフォーム統計",
+      "totalAnalyses": "総分析数",
+      "totalRevenue": "総収益",
+      "activeUsers": "アクティブユーザー",
+      "todayAnalyses": "本日の分析"
+    },
+    "settings": {
+      "title": "コントラクト設定",
+      "minimumBalance": "最小HERMES残高",
+      "analysisPrice": "分析価格 (HERMES)",
+      "dailyLimit": "1日の無料制限",
+      "paymentWallet": "支払いウォレット",
+      "update": "更新",
+      "updating": "更新中...",
+      "updated": "設定が正常に更新されました",
+      "pause": "コントラクトを一時停止",
+      "unpause": "コントラクトを再開",
+      "paused": "コントラクトは一時停止中",
+      "active": "コントラクトはアクティブ"
+    }
+  },
+  "toast": {
+    "walletConnected": "ウォレットが正常に接続されました",
+    "walletDisconnected": "ウォレットが切断されました",
+    "analysisComplete": "分析が正常に完了しました",
+    "analysisFailed": "分析に失敗しました",
+    "paymentSuccess": "支払いが成功しました",
+    "paymentFailed": "支払いに失敗しました",
+    "approvalSuccess": "承認が成功しました",
+    "approvalFailed": "承認に失敗しました",
+    "copied": "クリップボードにコピーしました",
+    "error": "エラーが発生しました"
+  },
+  "footer": {
+    "rights": "すべての権利を保有",
+    "poweredBy": "提供",
+    "docs": "ドキュメント",
+    "support": "サポート",
+    "terms": "利用規約",
+    "privacy": "プライバシーポリシー"
+  }
+}
+

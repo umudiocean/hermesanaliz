@@ -1,0 +1,128 @@
+{
+  "common": {
+    "appName": "Hermes AI Analyzer",
+    "connect": "Connect Wallet",
+    "disconnect": "Disconnect",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "comingSoon": "Coming Soon"
+  },
+  "nav": {
+    "home": "Home",
+    "analyzer": "Analyzer",
+    "admin": "Admin",
+    "language": "Language"
+  },
+  "hero": {
+    "title": "AI-Powered Token Analysis",
+    "subtitle": "Analyze BSC tokens with advanced AI scoring system",
+    "description": "Get comprehensive risk assessment, liquidity analysis, and holder distribution insights powered by blockchain data and artificial intelligence.",
+    "cta": "Start Analyzing",
+    "features": {
+      "ai": "AI Scoring",
+      "realtime": "Real-time Data",
+      "secure": "Secure & Transparent"
+    }
+  },
+  "wallet": {
+    "connect": "Connect your wallet to get started",
+    "wrongNetwork": "Wrong Network",
+    "switchToBSC": "Please switch to BSC Mainnet",
+    "balance": "Balance",
+    "address": "Address",
+    "hermesBalance": "HERMES Balance",
+    "insufficientBalance": "Insufficient HERMES Balance",
+    "needMinimum": "You need at least {amount} HERMES tokens to use this platform"
+  },
+  "analyzer": {
+    "title": "Token Analyzer",
+    "inputLabel": "Token Contract Address",
+    "inputPlaceholder": "Enter BSC token address (0x...)",
+    "analyze": "Analyze Token",
+    "analyzing": "Analyzing...",
+    "freeAnalyses": "Free Analyses Today",
+    "remaining": "{count} remaining",
+    "paymentRequired": "Payment Required",
+    "payAmount": "Pay {amount} HERMES",
+    "approve": "Approve",
+    "approving": "Approving...",
+    "approved": "Approved",
+    "invalidAddress": "Invalid contract address",
+    "enterAddress": "Please enter a token address"
+  },
+  "score": {
+    "overallScore": "Overall Score",
+    "riskLevel": "Risk Level",
+    "excellent": "Excellent",
+    "good": "Good",
+    "risky": "Risky",
+    "highRisk": "High Risk",
+    "categories": {
+      "liquidity": "Liquidity & Volume",
+      "holders": "Holder Analysis",
+      "security": "Contract Security",
+      "activity": "Activity & Age",
+      "performance": "Price Performance",
+      "dex": "DEX Presence"
+    },
+    "details": "Score Details",
+    "breakdown": "Category Breakdown",
+    "totalLiquidity": "Total Liquidity",
+    "tradingVolume": "24h Volume",
+    "holderCount": "Holder Count",
+    "topHolders": "Top 10 Holders",
+    "tokenAge": "Token Age",
+    "dailyTransfers": "Daily Transfers"
+  },
+  "admin": {
+    "title": "Admin Panel",
+    "login": "Admin Login",
+    "password": "Password",
+    "loginButton": "Login",
+    "logout": "Logout",
+    "unauthorized": "Unauthorized Access",
+    "stats": {
+      "title": "Platform Statistics",
+      "totalAnalyses": "Total Analyses",
+      "totalRevenue": "Total Revenue",
+      "activeUsers": "Active Users",
+      "todayAnalyses": "Today's Analyses"
+    },
+    "settings": {
+      "title": "Contract Settings",
+      "minimumBalance": "Minimum HERMES Balance",
+      "analysisPrice": "Analysis Price (HERMES)",
+      "dailyLimit": "Daily Free Limit",
+      "paymentWallet": "Payment Wallet",
+      "update": "Update",
+      "updating": "Updating...",
+      "updated": "Settings updated successfully",
+      "pause": "Pause Contract",
+      "unpause": "Unpause Contract",
+      "paused": "Contract is paused",
+      "active": "Contract is active"
+    }
+  },
+  "toast": {
+    "walletConnected": "Wallet connected successfully",
+    "walletDisconnected": "Wallet disconnected",
+    "analysisComplete": "Analysis completed successfully",
+    "analysisFailed": "Analysis failed",
+    "paymentSuccess": "Payment successful",
+    "paymentFailed": "Payment failed",
+    "approvalSuccess": "Approval successful",
+    "approvalFailed": "Approval failed",
+    "copied": "Copied to clipboard",
+    "error": "An error occurred"
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "poweredBy": "Powered by",
+    "docs": "Documentation",
+    "support": "Support",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy"
+  }
+}
+

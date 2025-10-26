@@ -1,0 +1,128 @@
+{
+  "common": {
+    "appName": "Hermes AI Analyzer",
+    "connect": "Conectar Billetera",
+    "disconnect": "Desconectar",
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito",
+    "comingSoon": "Próximamente"
+  },
+  "nav": {
+    "home": "Inicio",
+    "analyzer": "Analizador",
+    "admin": "Administrador",
+    "language": "Idioma"
+  },
+  "hero": {
+    "title": "Análisis de Tokens con IA",
+    "subtitle": "Analiza tokens BSC con un sistema de puntuación AI avanzado",
+    "description": "Obtén evaluación de riesgos integral, análisis de liquidez e información de distribución de holders impulsado por datos blockchain e inteligencia artificial.",
+    "cta": "Comenzar Análisis",
+    "features": {
+      "ai": "Puntuación IA",
+      "realtime": "Datos en Tiempo Real",
+      "secure": "Seguro y Transparente"
+    }
+  },
+  "wallet": {
+    "connect": "Conecta tu billetera para comenzar",
+    "wrongNetwork": "Red Incorrecta",
+    "switchToBSC": "Por favor cambia a BSC Mainnet",
+    "balance": "Balance",
+    "address": "Dirección",
+    "hermesBalance": "Balance HERMES",
+    "insufficientBalance": "Balance HERMES Insuficiente",
+    "needMinimum": "Necesitas al menos {amount} tokens HERMES para usar esta plataforma"
+  },
+  "analyzer": {
+    "title": "Analizador de Tokens",
+    "inputLabel": "Dirección del Contrato",
+    "inputPlaceholder": "Ingresa dirección del token BSC (0x...)",
+    "analyze": "Analizar Token",
+    "analyzing": "Analizando...",
+    "freeAnalyses": "Análisis Gratuitos Hoy",
+    "remaining": "{count} restantes",
+    "paymentRequired": "Pago Requerido",
+    "payAmount": "Pagar {amount} HERMES",
+    "approve": "Aprobar",
+    "approving": "Aprobando...",
+    "approved": "Aprobado",
+    "invalidAddress": "Dirección de contrato inválida",
+    "enterAddress": "Por favor ingresa una dirección de token"
+  },
+  "score": {
+    "overallScore": "Puntuación General",
+    "riskLevel": "Nivel de Riesgo",
+    "excellent": "Excelente",
+    "good": "Bueno",
+    "risky": "Riesgoso",
+    "highRisk": "Alto Riesgo",
+    "categories": {
+      "liquidity": "Liquidez y Volumen",
+      "holders": "Análisis de Holders",
+      "security": "Seguridad del Contrato",
+      "activity": "Actividad y Edad",
+      "performance": "Rendimiento del Precio",
+      "dex": "Presencia DEX"
+    },
+    "details": "Detalles de Puntuación",
+    "breakdown": "Desglose por Categoría",
+    "totalLiquidity": "Liquidez Total",
+    "tradingVolume": "Volumen 24h",
+    "holderCount": "Cantidad de Holders",
+    "topHolders": "Top 10 Holders",
+    "tokenAge": "Edad del Token",
+    "dailyTransfers": "Transferencias Diarias"
+  },
+  "admin": {
+    "title": "Panel de Administración",
+    "login": "Inicio de Sesión Admin",
+    "password": "Contraseña",
+    "loginButton": "Iniciar Sesión",
+    "logout": "Cerrar Sesión",
+    "unauthorized": "Acceso No Autorizado",
+    "stats": {
+      "title": "Estadísticas de la Plataforma",
+      "totalAnalyses": "Análisis Totales",
+      "totalRevenue": "Ingresos Totales",
+      "activeUsers": "Usuarios Activos",
+      "todayAnalyses": "Análisis de Hoy"
+    },
+    "settings": {
+      "title": "Configuración del Contrato",
+      "minimumBalance": "Balance Mínimo HERMES",
+      "analysisPrice": "Precio de Análisis (HERMES)",
+      "dailyLimit": "Límite Diario Gratuito",
+      "paymentWallet": "Billetera de Pago",
+      "update": "Actualizar",
+      "updating": "Actualizando...",
+      "updated": "Configuración actualizada exitosamente",
+      "pause": "Pausar Contrato",
+      "unpause": "Reanudar Contrato",
+      "paused": "Contrato pausado",
+      "active": "Contrato activo"
+    }
+  },
+  "toast": {
+    "walletConnected": "Billetera conectada exitosamente",
+    "walletDisconnected": "Billetera desconectada",
+    "analysisComplete": "Análisis completado exitosamente",
+    "analysisFailed": "Análisis fallido",
+    "paymentSuccess": "Pago exitoso",
+    "paymentFailed": "Pago fallido",
+    "approvalSuccess": "Aprobación exitosa",
+    "approvalFailed": "Aprobación fallida",
+    "copied": "Copiado al portapapeles",
+    "error": "Ocurrió un error"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados",
+    "poweredBy": "Desarrollado por",
+    "docs": "Documentación",
+    "support": "Soporte",
+    "terms": "Términos de Servicio",
+    "privacy": "Política de Privacidad"
+  }
+}
+

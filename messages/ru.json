@@ -1,0 +1,128 @@
+{
+  "common": {
+    "appName": "Hermes AI Analyzer",
+    "connect": "Подключить кошелек",
+    "disconnect": "Отключить",
+    "loading": "Загрузка...",
+    "error": "Ошибка",
+    "success": "Успешно",
+    "comingSoon": "Скоро"
+  },
+  "nav": {
+    "home": "Главная",
+    "analyzer": "Анализатор",
+    "admin": "Админ",
+    "language": "Язык"
+  },
+  "hero": {
+    "title": "Анализ токенов с ИИ",
+    "subtitle": "Анализируйте BSC токены с продвинутой системой оценки ИИ",
+    "description": "Получите комплексную оценку рисков, анализ ликвидности и информацию о распределении держателей на основе блокчейн данных и искусственного интеллекта.",
+    "cta": "Начать анализ",
+    "features": {
+      "ai": "Оценка ИИ",
+      "realtime": "Данные в реальном времени",
+      "secure": "Безопасно и прозрачно"
+    }
+  },
+  "wallet": {
+    "connect": "Подключите кошелек для начала",
+    "wrongNetwork": "Неверная сеть",
+    "switchToBSC": "Переключитесь на BSC Mainnet",
+    "balance": "Баланс",
+    "address": "Адрес",
+    "hermesBalance": "Баланс HERMES",
+    "insufficientBalance": "Недостаточный баланс HERMES",
+    "needMinimum": "Вам нужно минимум {amount} токенов HERMES для использования платформы"
+  },
+  "analyzer": {
+    "title": "Анализатор токенов",
+    "inputLabel": "Адрес контракта токена",
+    "inputPlaceholder": "Введите адрес BSC токена (0x...)",
+    "analyze": "Анализировать токен",
+    "analyzing": "Анализ...",
+    "freeAnalyses": "Бесплатных анализов сегодня",
+    "remaining": "осталось {count}",
+    "paymentRequired": "Требуется оплата",
+    "payAmount": "Оплатить {amount} HERMES",
+    "approve": "Одобрить",
+    "approving": "Одобрение...",
+    "approved": "Одобрено",
+    "invalidAddress": "Неверный адрес контракта",
+    "enterAddress": "Введите адрес токена"
+  },
+  "score": {
+    "overallScore": "Общий балл",
+    "riskLevel": "Уровень риска",
+    "excellent": "Отлично",
+    "good": "Хорошо",
+    "risky": "Рискованно",
+    "highRisk": "Высокий риск",
+    "categories": {
+      "liquidity": "Ликвидность и объем",
+      "holders": "Анализ держателей",
+      "security": "Безопасность контракта",
+      "activity": "Активность и возраст",
+      "performance": "Ценовая динамика",
+      "dex": "Присутствие на DEX"
+    },
+    "details": "Детали оценки",
+    "breakdown": "Разбивка по категориям",
+    "totalLiquidity": "Общая ликвидность",
+    "tradingVolume": "Объем 24ч",
+    "holderCount": "Количество держателей",
+    "topHolders": "Топ 10 держателей",
+    "tokenAge": "Возраст токена",
+    "dailyTransfers": "Дневные переводы"
+  },
+  "admin": {
+    "title": "Панель администратора",
+    "login": "Вход администратора",
+    "password": "Пароль",
+    "loginButton": "Войти",
+    "logout": "Выйти",
+    "unauthorized": "Неавторизованный доступ",
+    "stats": {
+      "title": "Статистика платформы",
+      "totalAnalyses": "Всего анализов",
+      "totalRevenue": "Общий доход",
+      "activeUsers": "Активных пользователей",
+      "todayAnalyses": "Анализов сегодня"
+    },
+    "settings": {
+      "title": "Настройки контракта",
+      "minimumBalance": "Минимальный баланс HERMES",
+      "analysisPrice": "Цена анализа (HERMES)",
+      "dailyLimit": "Дневной бесплатный лимит",
+      "paymentWallet": "Кошелек для платежей",
+      "update": "Обновить",
+      "updating": "Обновление...",
+      "updated": "Настройки успешно обновлены",
+      "pause": "Приостановить контракт",
+      "unpause": "Возобновить контракт",
+      "paused": "Контракт приостановлен",
+      "active": "Контракт активен"
+    }
+  },
+  "toast": {
+    "walletConnected": "Кошелек успешно подключен",
+    "walletDisconnected": "Кошелек отключен",
+    "analysisComplete": "Анализ успешно завершен",
+    "analysisFailed": "Анализ не удался",
+    "paymentSuccess": "Оплата успешна",
+    "paymentFailed": "Оплата не удалась",
+    "approvalSuccess": "Одобрение успешно",
+    "approvalFailed": "Одобрение не удалось",
+    "copied": "Скопировано в буфер обмена",
+    "error": "Произошла ошибка"
+  },
+  "footer": {
+    "rights": "Все права защищены",
+    "poweredBy": "При поддержке",
+    "docs": "Документация",
+    "support": "Поддержка",
+    "terms": "Условия использования",
+    "privacy": "Политика конфиденциальности"
+  }
+}
+
