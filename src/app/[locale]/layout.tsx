@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { NextIntlClientProvider } from 'next-intl';
 import { locales } from '@/i18n';
@@ -6,6 +7,11 @@ import { Inter } from 'next/font/google';
 import '../globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
+
+export const metadata: Metadata = {
+  title: 'Hermes AI Analyzer - Token Analysis Platform',
+  description: 'AI-powered token analysis on BSC with advanced scoring system',
+};
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
