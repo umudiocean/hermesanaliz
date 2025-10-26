@@ -13,9 +13,8 @@ export const metadata: Metadata = {
   description: 'AI-powered token analysis on BSC with advanced scoring system',
 };
 
-export function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
-}
+export const dynamic = 'force-dynamic';
+export const dynamicParams = true;
 
 export default async function LocaleLayout({
   children,
